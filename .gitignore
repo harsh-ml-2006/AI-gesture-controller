@@ -1,0 +1,23 @@
+# Virtual Environment — install nahi karna GitHub pe
+venv/
+.venv/
+env/
+
+# Python cache files — automatically generate hote hain
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+
+# Logs
+*.log

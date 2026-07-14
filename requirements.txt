@@ -1,0 +1,39 @@
+# =============================================================================
+# requirements.txt — AI Gesture Controller ke saare dependencies
+# =============================================================================
+#
+# Install karne ka tarika:
+#   1. Venv banao (ek baar):   python -m venv venv
+#   2. Activate karo:          venv\Scripts\activate
+#   3. Install karo:           pip install -r requirements.txt
+#
+# IMPORTANT: mediapipe==0.10.9 use karna zaroori hai
+#            Nayi version (0.10.14+) mein mp.solutions API nahi hai
+# =============================================================================
+
+
+# ── CORE — Webcam + Hand Detection ───────────────────────────────────────────
+
+opencv-python==5.0.0.93             # Webcam se frame lena, image dikhana, drawing
+mediapipe==0.10.9                   # Hand landmark detection — 21 points per hand
+                                     # (0.10.9 pin kiya — nayi version ka API alag hai)
+numpy==2.2.6                        # Array math — mediapipe aur opencv use karte hain
+
+
+# ── INPUT CONTROL — Keyboard / Mouse actions ──────────────────────────────────
+
+pynput==1.8.2                       # Gaming Mode: keys press/hold/release
+                                     # Music Mode:  media keys + Shift+N/P shortcuts
+pyautogui==0.9.54                   # Virtual Mouse Mode (coming soon): mouse control
+
+
+# ── SYSTEM CONTROL — Hardware control (future modes) ─────────────────────────
+
+pycaw==20251023                     # Volume Control Mode: Windows audio API
+screen-brightness-control==0.27.2   # Brightness Control Mode: screen brightness
+
+
+# ── CRITICAL VERSION PIN ──────────────────────────────────────────────────────
+
+protobuf==3.20.3                    # mediapipe 0.10.9 ke saath compatible
+                                     # WARNING: 4.x install mat karna — conflict hoga
