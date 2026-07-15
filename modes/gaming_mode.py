@@ -70,7 +70,7 @@ class GamingMode:
         cv2.rectangle(frame, (0, 55), (400, 145), (20, 20, 20), cv2.FILLED)
         cv2.putText(frame, f'Gesture: {gesture_name}', (10, 85), cv2.FONT_HERSHEY_SIMPLEX, 0.75, COLOR_WHITE, 2)
         cv2.putText(frame, f'Key: [ {key_display} ]', (10, 130), cv2.FONT_HERSHEY_SIMPLEX, 1.0, COLOR_YELLOW if active_key else COLOR_WHITE, 2)
-        cheat_sheet = [('Index', 'W  - Forward'), ('Index+Middle', 'S  - Backward'), ('3 Fingers', 'A  - Left'), ('4 Fingers', 'D  - Right'), ('Open Palm', 'Space - Jump'), ('Thumb Only', 'F  - Action'), ('Thumb+Pinky', 'R  - Reload'), ('Pinky Only', 'C  - Crouch'), ('Fist', 'Idle')]
+        cheat_sheet = [('Index', 'UP    - Forward'), ('Index+Middle', 'DOWN  - Backward'), ('3 Fingers', 'LEFT  - Left'), ('4 Fingers', 'RIGHT - Right'), ('Open Palm', 'Space - Jump'), ('Thumb Only', 'F  - Action'), ('Thumb+Pinky', 'R  - Reload'), ('Pinky Only', 'C  - Crouch'), ('Fist', 'Idle')]
         sheet_x = w - 350
         sheet_y = h - (len(cheat_sheet) * 28 + 40)
         cv2.rectangle(frame, (sheet_x - 10, sheet_y - 25), (w - 5, h - 5), (20, 20, 20), cv2.FILLED)
