@@ -108,7 +108,3 @@ AI-Gesture-Controller/
 **Harsh Kumar**
 
 Computer Science Engineering Student | KIIT University
-
-GitHub: https://github.com/YourUsername
-
-LinkedIn: https://linkedin.com/in/YourProfile
